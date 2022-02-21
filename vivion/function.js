@@ -71,7 +71,7 @@ function getHeartPoint(angle) {
     }
     else{
         offsetX = $("#loveHeart").width()-170;// 减的值越小越靠右
-        offsetY = $("#loveHeart").height()-185;// 减的值越小越靠下
+        offsetY = $("#loveHeart").height()-260;// 减的值越小越靠下
     }
 	var t = angle / Math.PI;
 	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
@@ -187,7 +187,7 @@ function adjustWordsPosition() {
     }
     else{
         $('#words').css("top", $("#garden").position().top + 100);
-        $('#words').css("left", $("#garden").position().left + 60);
+        $('#words').css("left", $("#garden").position().left + 50);
     }
 }
 
