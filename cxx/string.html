@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>动画 · 笔记</title>
+        <title>3. 字符串操作 · 笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,8 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="plus-note.html" />
     
-    <link rel="prev" href="../vivion.html" />
+    
+    <link rel="prev" href="c++-file.html" />
     
 
     </head>
@@ -364,9 +366,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../cxx/c-file.html">
+        <li class="chapter " data-level="1.4.1" data-path="c-file.html">
             
-                <a href="../cxx/c-file.html">
+                <a href="c-file.html">
             
                     
                     1. 输入输出与文件操作-C语言
@@ -377,9 +379,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../cxx/c++-file.html">
+        <li class="chapter " data-level="1.4.2" data-path="c++-file.html">
             
-                <a href="../cxx/c++-file.html">
+                <a href="c++-file.html">
             
                     
                     2. 输入输出与文件操作-C语言
@@ -390,9 +392,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../cxx/string.html">
+        <li class="chapter active" data-level="1.4.3" data-path="string.html">
             
-                <a href="../cxx/string.html">
+                <a href="string.html">
             
                     
                     3. 字符串操作
@@ -403,9 +405,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="../cxx/plus-note.html">
+        <li class="chapter " data-level="1.4.4" data-path="plus-note.html">
             
-                <a href="../cxx/plus-note.html">
+                <a href="plus-note.html">
             
                     
                     4. cplusplus笔记
@@ -416,9 +418,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="../cxx/csapp.html">
+        <li class="chapter " data-level="1.4.5" data-path="csapp.html">
             
-                <a href="../cxx/csapp.html">
+                <a href="csapp.html">
             
                     
                     5. csapp笔记
@@ -538,9 +540,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.7.1" data-path="vivion.html">
+        <li class="chapter " data-level="1.7.1" data-path="../vivion/vivion.html">
             
-                <a href="vivion.html">
+                <a href="../vivion/vivion.html">
             
                     
                     动画
@@ -586,7 +588,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >动画</a>
+        <a href=".." >3. 字符串操作</a>
     </h1>
 </div>
 
@@ -601,7 +603,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vivion"><a name="vivion" class="plugin-anchor" href="#vivion"><i class="fa fa-link" aria-hidden="true"></i></a>vivion</h1>
+                                <ol>
+<li>C&#x8BED;&#x8A00;-&#x5934;&#x6587;&#x4EF6;string.h
+ <code>int strcmp ( const char * str1, const char * str2 );</code>
+ &#x76F8;&#x7B49;&#x8FD4;&#x56DE;0&#xFF0C;str1\&lt;str2&#x8FD4;&#x56DE;&#x8D1F;&#x503C;&#xFF0C;&#x5927;&#x4E8E;&#x8FD4;&#x56DE;&#x6B63;&#x503C;&#x3002;
+ <code>char * strcat ( char * dest, const char * src );</code>
+ src&#x5B57;&#x7B26;&#x4E32;&#x6DFB;&#x52A0;&#x5230;dest&#x7684;&#x5C3E;&#x90E8;&#xFF0C;dest&#x539F;&#x6765;&#x7684;&apos;\0&apos;&#x4F1A;&#x88AB;&#x66FF;&#x6362;&#x6389;&#xFF0C;&#x6700;&#x540E;&#x7ED3;&#x5C3E;&#x4F1A;&#x589E;&#x52A0;&#x65B0;&#x7684;&apos;\0&apos;&#xFF0C;&#x6CE8;&#x610F;src&#x548C;&#x7684;dest&#x6240;&#x6307;&#x5411;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x4E0D;&#x80FD;&#x91CD;&#x53E0;&#xFF0C;&#x4E14;dest&#x8981;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7A7A;&#x95F4;&#x6765;&#x5B58;&#x50A8;&#x5B57;&#x7B26;&#x4E32;&#x3002;
+ <code>char * strcpy ( char * dest, const char * src );</code>
+ &#x5C06;src&#x6307;&#x5411;&#x5B57;&#x7B26;&#x4E32;&#x590D;&#x5236;&#x5230;dest&#xFF0C;&#x6CE8;&#x610F;dest&#x8981;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x4E14;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x4E0D;&#x80FD;&#x91CD;&#x53E0;&#x3002;&#x590D;&#x5236;&#x9047;&#x5230;&apos;\0&apos;&#x7ED3;&#x675F;&#x3002;&apos;\0&apos;&#x4E5F;&#x4F1A;&#x590D;&#x5236;&#x3002;
+ <code>char * strncpy&#xFF08;char * dest&#xFF0C;const char * src&#xFF0C;size_t count&#xFF09;;</code>
+ &#x5C06;src&#x6307;&#x5411;&#x5B57;&#x7B26;&#x4E32;&#x590D;&#x5236;&#x5230;dest&#xFF0C;&#x6700;&#x591A;&#x590D;&#x5236;count&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x6CE8;&#x610F;count&#x5C0F;&#x4E8E;strlen(src)&#x65F6;&#xFF0C;&#x4F1A;&#x76F4;&#x63A5;&#x590D;&#x5236;count&#x4E2A;&#x5B57;&#x7B26;&#x5230;dest&#xFF0C;&#x4E0D;&#x4F1A;&#x5728;dest&#x540E;&#x9762;&#x8865;&apos;\0&apos;&#xFF0C;&#x82E5;&#x5927;&#x4E8E;strlen(src)&#xFF0C;&#x5219;&#x4F1A;&#x5728;&#x540E;&#x9762;&#x8865;&apos;\0&apos;&#xFF0C;&#x76F4;&#x5230;&#x5199;&#x5165;count&#x4E2A;&#x5B57;&#x7B26;&#x4E3A;&#x6B62;&#xFF0C;&#x56E0;&#x6B64;&#x7528;&#x8FD9;&#x4E2A;&#x65F6;&#x8981;&#x786E;&#x4FDD;&#x6B63;&#x786E;&#x3002;
+ <code>char *strstr(const char *haystack, const char *needle)</code>
+ &#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x5728;haystack&#x4E2D;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;needle&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x4F4D;&#x7F6E;&#x6307;&#x9488;&#xFF0C;&#x5982;&#x679C;&#x672A;&#x627E;&#x5230;&#x5219;&#x8FD4;&#x56DE;NULL&#x3002;<pre><code> char *str1=strstr(&quot;1234xyz&quot;,&quot;34&quot;);
+ printf(&quot;%s\n&quot;, str1);
+</code></pre> &#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x6253;&#x5370;&#x7684;&#x662F;34xyz&#x3002;
+ <code>size_t strspn(const char *str1, const char *str2)</code>
+ &#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE; str1 &#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x4E0D;&#x5728;&#x5B57;&#x7B26;&#x4E32; str2 &#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x5B57;&#x7B26;&#x4E0B;&#x6807;&#x3002;
+ <code>size_t strcspn(const char *str1, const char *str2)</code>
+ &#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE; str1 &#x5F00;&#x5934;&#x8FDE;&#x7EED;&#x90FD;&#x4E0D;&#x542B;&#x5B57;&#x7B26;&#x4E32; str2 &#x4E2D;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x3002;</li>
+<li>atoi(), strtol()&#x7B49;&#x4E00;&#x7CFB;&#x5217;&#x51FD;&#x6570;&#x7684;&#x4F7F;&#x7528;(stdlib.h)
+ <code>long long int atoll ( const char * str );</code>
+ <code>long long int strtoll (const char* str, char** endptr, int base);</code>
+ strtol&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD4;&#x56DE;&#x503C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x8F6C;&#x6362;&#x6B63;&#x786E;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8FDB;&#x5236;&#xFF0C;&#x4F3C;&#x4E4E;&#x76F8;&#x5BF9;&#x597D;&#x4E00;&#x70B9;&#x3002;</li>
+<li>C++&#x4E4B;string&#x7C7B;&#x578B;&#xFF1A;
+ &#x61D2;&#x5F97;&#x5F04;&#x4E86;&#xFF0C;&#x653E;&#x4E2A;&#x94FE;&#x63A5;&#x5427;&#xFF1A;<a href="https://www.cplusplus.com/reference/string/string/" target="_blank">https://www.cplusplus.com/reference/string/string/</a></li>
+</ol>
 
                                 
                                 </section>
@@ -629,10 +655,14 @@
 
             
                 
-                <a href="../vivion.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: vivion">
+                <a href="c++-file.html" class="navigation navigation-prev " aria-label="Previous page: 2. 输入输出与文件操作-C语言">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="plus-note.html" class="navigation navigation-next " aria-label="Next page: 4. cplusplus笔记">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -641,7 +671,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"动画","level":"1.7.1","depth":2,"previous":{"title":"vivion","level":"1.7","depth":1,"path":"vivion.md","ref":"vivion.md","articles":[{"title":"动画","level":"1.7.1","depth":2,"path":"vivion/vivion.md","ref":"vivion/vivion.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","gitbook":"*"},"file":{"path":"vivion/vivion.md","mtime":"2022-02-21T09:03:03.015Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-21T11:20:42.938Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3. 字符串操作","level":"1.4.3","depth":2,"next":{"title":"4. cplusplus笔记","level":"1.4.4","depth":2,"path":"cxx/plus-note.md","ref":"cxx/plus-note.md","articles":[]},"previous":{"title":"2. 输入输出与文件操作-C语言","level":"1.4.2","depth":2,"path":"cxx/c++-file.md","ref":"cxx/c++-file.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","gitbook":"*"},"file":{"path":"cxx/string.md","mtime":"2022-02-21T11:00:23.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-21T11:20:42.938Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

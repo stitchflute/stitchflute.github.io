@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>动画 · 笔记</title>
+        <title>LDBC · 笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,8 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="monetdb.html" />
     
-    <link rel="prev" href="../vivion.html" />
+    
+    <link rel="prev" href="psql.html" />
     
 
     </head>
@@ -293,9 +295,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../database/mysql.html">
+        <li class="chapter " data-level="1.3.1" data-path="mysql.html">
             
-                <a href="../database/mysql.html">
+                <a href="mysql.html">
             
                     
                     MySQL笔记
@@ -306,9 +308,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../database/psql.html">
+        <li class="chapter " data-level="1.3.2" data-path="psql.html">
             
-                <a href="../database/psql.html">
+                <a href="psql.html">
             
                     
                     psql笔记
@@ -319,9 +321,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../database/ldbc.html">
+        <li class="chapter active" data-level="1.3.3" data-path="ldbc.html">
             
-                <a href="../database/ldbc.html">
+                <a href="ldbc.html">
             
                     
                     LDBC
@@ -332,9 +334,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../database/monetdb.html">
+        <li class="chapter " data-level="1.3.4" data-path="monetdb.html">
             
-                <a href="../database/monetdb.html">
+                <a href="monetdb.html">
             
                     
                     MonetDB安装
@@ -538,9 +540,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.7.1" data-path="vivion.html">
+        <li class="chapter " data-level="1.7.1" data-path="../vivion/vivion.html">
             
-                <a href="vivion.html">
+                <a href="../vivion/vivion.html">
             
                     
                     动画
@@ -586,7 +588,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >动画</a>
+        <a href=".." >LDBC</a>
     </h1>
 </div>
 
@@ -601,7 +603,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vivion"><a name="vivion" class="plugin-anchor" href="#vivion"><i class="fa fa-link" aria-hidden="true"></i></a>vivion</h1>
+                                <ol>
+<li>ldbc datagen&#x751F;&#x6210;&#x6570;&#x636E;&#x65F6;&#x51FA;&#x73B0;&#x4E0D;&#x5408;&#x7406;&#x7684;&#x5185;&#x5B58;&#x7684;&#x8BBF;&#x95EE;&#x4F8B;&#x5916;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;Hadoop&#x7248;&#x672C;2.6&#xFF0C;&#x7136;&#x540E;jdk&#x7248;&#x672C;&#x4E0D;&#x8981;&#x7528;&#x592A;&#x9AD8;&#x3002;</li>
+<li>ldbc datagen&#x751F;&#x6210;&#x6570;&#x636E;&#x65F6;&#x505C;&#x6B62;&#x4E0D;&#x52A8;&#x53EF;&#x80FD;&#x7684;&#x539F;&#x56E0;&#xFF1A;&#x6CA1;&#x6709;&#x8054;&#x7F51;&#xFF0C;&#x53C2;&#x6570;&#x6587;&#x4EF6;&#x8BBE;&#x7F6E;&#x9519;&#x8BEF;&#xFF0C;&#x4F3C;&#x4E4E;&#x6CE8;&#x91CA;&#x4E0D;&#x662F;&#x7528;#&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x7A0D;&#x7A0D;&#x957F;&#x4E00;&#x70B9;&#x70B9;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x5F00;&#x59CB;&#x7684;&#x8FC7;&#x7A0B;&#x53EF;&#x80FD;&#x6BD4;&#x8F83;&#x6162;&#x3002;</li>
+<li>ssh&#xFF08;&#x6240;&#x91CC;&#x7535;&#x8111;&#xFF09;&#x65E0;&#x6CD5;&#x6253;&#x5F00;teamviewer&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A; 
+<code>ps -aux | grep teamviewer
+teamviewer -daemon stop
+teamviewer -daemon start
+teamviewer -info print id
+teamviewer --passwd mypasswd</code>
+&#x5373;&#x5148;&#x505C;&#x6B62;&#x518D;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x3002;</li>
+<li>&#x62A5;&#x9519;&#x8BF4;missing parameter&#x53EA;&#x9700;&#x5728;&#x5BF9;&#x5E94;&#x914D;&#x7F6E;&#x6587;&#x4EF6;.properties&#x52A0;&#x4E0A;&#x5BF9;&#x5E94;&#x53C2;&#x6570;&#x5373;&#x53EF;&#x3002;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x4E0A;&#x6570;&#x636E;&#x5E93;&#x53EF;&#x80FD;&#x662F;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x8D26;&#x6237;&#x548C;&#x5BC6;&#x7801;&#x4E0D;&#x5BF9;&#x3002;</li>
+</ol>
 
                                 
                                 </section>
@@ -629,10 +642,14 @@
 
             
                 
-                <a href="../vivion.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: vivion">
+                <a href="psql.html" class="navigation navigation-prev " aria-label="Previous page: psql笔记">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="monetdb.html" class="navigation navigation-next " aria-label="Next page: MonetDB安装">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -641,7 +658,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"动画","level":"1.7.1","depth":2,"previous":{"title":"vivion","level":"1.7","depth":1,"path":"vivion.md","ref":"vivion.md","articles":[{"title":"动画","level":"1.7.1","depth":2,"path":"vivion/vivion.md","ref":"vivion/vivion.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","gitbook":"*"},"file":{"path":"vivion/vivion.md","mtime":"2022-02-21T09:03:03.015Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-21T11:20:42.938Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"LDBC","level":"1.3.3","depth":2,"next":{"title":"MonetDB安装","level":"1.3.4","depth":2,"path":"database/monetdb.md","ref":"database/monetdb.md","articles":[]},"previous":{"title":"psql笔记","level":"1.3.2","depth":2,"path":"database/psql.md","ref":"database/psql.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","gitbook":"*"},"file":{"path":"database/ldbc.md","mtime":"2022-02-21T10:42:33.049Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-21T11:20:42.938Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
