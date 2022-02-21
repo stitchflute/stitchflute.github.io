@@ -44,7 +44,8 @@
 	```
 	scanf从in.txt读取输入，printf输出会写到out.txt中去。
 3. `open()(sys/types.h, sys/stat.h, fcntl.h)`是最底层的调用
-	```int open(const char * pathname, int flags);
+	```
+	int open(const char * pathname, int flags);
 	int open(const char * pathname, int flags, mode_t mode);
 	```
 	read(), write()头文件为(unistd.h)
