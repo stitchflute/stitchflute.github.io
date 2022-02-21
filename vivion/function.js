@@ -13,9 +13,13 @@ $(function () {
     gardenCanvas = $garden[0];
 //	gardenCanvas.width = $("#loveHeart").width();
 //    gardenCanvas.height = $("#loveHeart").height();
-    if(clientWidth > 1300){
-        gardenCanvas.width = $("#loveHeart").width()*1.2;
-        gardenCanvas.height = $("#loveHeart").height()*1.2;
+	if(clientWidth > 1600){
+        gardenCanvas.width = $("#loveHeart").width()*1.6;
+        gardenCanvas.height = $("#loveHeart").height()*1.6;
+    }
+    else if(clientWidth > 1300){
+        gardenCanvas.width = $("#loveHeart").width()*1.8;
+        gardenCanvas.height = $("#loveHeart").height()*1.8;
     }
     else if(clientWidth > 1000){
         gardenCanvas.width = $("#loveHeart").width()*1.6;
@@ -51,24 +55,24 @@ $(window).resize(function() {
 
 function getHeartPoint(angle) {
 	var offsetX, offsetY;
-	offsetX = $("#loveHeart").width()*0.7;
-    offsetY = $("#loveHeart").height()*0.5;
-	// if(clientWidth > 1600){
- //        offsetX = $("#loveHeart").width()*0.7;
- //        offsetY = $("#loveHeart").height()*0.5;
- //    }
- //    else if(clientWidth > 1300){
- //        offsetX = $("#loveHeart").width()-240;
- //        offsetY = $("#loveHeart").height()-305;
- //    }
- //    else if(clientWidth > 1000){
- //        offsetX = $("#loveHeart").width()-100;
- //        offsetY = $("#loveHeart").height()-245;
- //    }
- //    else{
- //        offsetX = $("#loveHeart").width()-170;// 减的值越小越靠左
- //        offsetY = $("#loveHeart").height()-185;// 减的值越小越靠下
- //    }
+	// offsetX = $("#loveHeart").width()*0.7;
+    // offsetY = $("#loveHeart").height()*0.5;
+	if(clientWidth > 1600){
+        offsetX = $("#loveHeart").width()*0.7;
+        offsetY = $("#loveHeart").height()*0.6;
+    }
+    else if(clientWidth > 1300){
+        offsetX = $("#loveHeart").width()-40;
+        offsetY = $("#loveHeart").height()-205;
+    }
+    else if(clientWidth > 1000){
+        offsetX = $("#loveHeart").width()-100;
+        offsetY = $("#loveHeart").height()-245;
+    }
+    else{
+        offsetX = $("#loveHeart").width()-170;// 减的值越小越靠右
+        offsetY = $("#loveHeart").height()-185;// 减的值越小越靠下
+    }
 	var t = angle / Math.PI;
 	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
 	var y = - 20 * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
@@ -167,24 +171,24 @@ function showMessages() {
 function adjustWordsPosition() {
 	$('#words').css("position", "absolute");
 	// alert(clientWidth)
-	$('#words').css("top", $("#garden").position().top*3.2);
-    $('#words').css("left", $("#garden").position().left*1.1);
-	// if(clientWidth > 1600){
- //        $('#words').css("top", $("#garden").position().top*3.2);
- //        $('#words').css("left", $("#garden").position().left*1.1);
- //    }
-	// else if(clientWidth > 1300){
- //        $('#words').css("top", $("#garden").position().top + 130);
- //        $('#words').css("left", $("#garden").position().left + 180);
- //    }
- //    else if(clientWidth > 1000){
- //        $('#words').css("top", $("#garden").position().top + 90);
- //        $('#words').css("left", $("#garden").position().left + 80);
- //    }
- //    else{
- //        $('#words').css("top", $("#garden").position().top + 100);
- //        $('#words').css("left", $("#garden").position().left + 60);
- //    }
+	// $('#words').css("top", $("#garden").position().top*3.2);
+ //    $('#words').css("left", $("#garden").position().left*1.1);
+	if(clientWidth > 1600){
+        $('#words').css("top", $("#garden").position().top*3.2);
+        $('#words').css("left", $("#garden").position().left*1.1);
+    }
+	else if(clientWidth > 1300){
+        $('#words').css("top", $("#garden").position().top + 90);
+        $('#words').css("left", $("#garden").position().left + 70);
+    }
+    else if(clientWidth > 1000){
+        $('#words').css("top", $("#garden").position().top + 90);
+        $('#words').css("left", $("#garden").position().left + 80);
+    }
+    else{
+        $('#words').css("top", $("#garden").position().top + 100);
+        $('#words').css("left", $("#garden").position().left + 60);
+    }
 }
 
 function adjustVideoPosition() {
