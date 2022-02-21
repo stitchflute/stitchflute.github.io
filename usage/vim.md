@@ -1,6 +1,6 @@
 1. 统计字符串个数：`%s/pattern//gn`
 2. 替换字符串：
-```perl
+```
 s/pattern/dest/ #替换当前行第一个pattern
 s/pattern/dest/g #替换当前行所有的pattern
 n,$s/pattern/dest/ #替换从第n开始到最后一行的每一行的第一个pattern
@@ -13,8 +13,8 @@ s替换成v表示对不匹配的每一行进行相应的操作
 4. 移动到匹配的括号：%
 5. 精确跳到某一行：ngg或者nG
 6. 向前/后翻页：`ctrl+f/b`
-6. vimrc配置文件
-	```perl
+6. vimrc配置文件:
+	```
 	source /etc/vim/vimrc
 	" ************1. 基本配置************
 	" 去掉有关vi一致性模式,避免操作习惯上的局限.

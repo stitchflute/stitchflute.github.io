@@ -605,21 +605,20 @@
                                 
                                 <ol>
 <li>&#x7EDF;&#x8BA1;&#x5B57;&#x7B26;&#x4E32;&#x4E2A;&#x6570;&#xFF1A;<code>%s/pattern//gn</code></li>
-<li>&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;<pre><code class="lang-perl"><span class="hljs-keyword">s</span>/pattern/dest/ <span class="hljs-comment">#&#x66FF;&#x6362;&#x5F53;&#x524D;&#x884C;&#x7B2C;&#x4E00;&#x4E2A;pattern</span>
-<span class="hljs-keyword">s</span>/pattern/dest/g <span class="hljs-comment">#&#x66FF;&#x6362;&#x5F53;&#x524D;&#x884C;&#x6240;&#x6709;&#x7684;pattern</span>
-n,$s/pattern/dest/ <span class="hljs-comment">#&#x66FF;&#x6362;&#x4ECE;&#x7B2C;n&#x5F00;&#x59CB;&#x5230;&#x6700;&#x540E;&#x4E00;&#x884C;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;pattern</span>
-n,$s/pattern/dest/g <span class="hljs-comment">#&#x66FF;&#x6362;&#x4ECE;&#x7B2C;n&#x5F00;&#x59CB;&#x5230;&#x6700;&#x540E;&#x4E00;&#x884C;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x6240;&#x6709;pattern&#xFF0C;n&#x4E3A;&#x6570;&#x5B57;&#xFF0C;&#x82E5;n&#x4E3A;&apos;.&apos;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x5F53;&#x524D;&#x884C;&#x5F00;&#x59CB;&#x5230;&#x6700;&#x540E;&#x4E00;&#x884C;</span>
-%s/pattern/dest/ <span class="hljs-comment">#&#x66FF;&#x6362;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;pattern</span>
-%s/pattern/dest/g <span class="hljs-comment">#&#x66FF;&#x6362;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x6240;&#x6709;pattern</span>
-<span class="hljs-keyword">s</span>&#x66FF;&#x6362;&#x6210;v&#x8868;&#x793A;&#x5BF9;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x64CD;&#x4F5C;
-</code></pre>
-</li>
+<li>&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;<pre><code>s/pattern/dest/ #&#x66FF;&#x6362;&#x5F53;&#x524D;&#x884C;&#x7B2C;&#x4E00;&#x4E2A;pattern
+s/pattern/dest/g #&#x66FF;&#x6362;&#x5F53;&#x524D;&#x884C;&#x6240;&#x6709;&#x7684;pattern
+n,$s/pattern/dest/ #&#x66FF;&#x6362;&#x4ECE;&#x7B2C;n&#x5F00;&#x59CB;&#x5230;&#x6700;&#x540E;&#x4E00;&#x884C;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;pattern
+n,$s/pattern/dest/g #&#x66FF;&#x6362;&#x4ECE;&#x7B2C;n&#x5F00;&#x59CB;&#x5230;&#x6700;&#x540E;&#x4E00;&#x884C;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x6240;&#x6709;pattern&#xFF0C;n&#x4E3A;&#x6570;&#x5B57;&#xFF0C;&#x82E5;n&#x4E3A;&apos;.&apos;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x5F53;&#x524D;&#x884C;&#x5F00;&#x59CB;&#x5230;&#x6700;&#x540E;&#x4E00;&#x884C;
+%s/pattern/dest/ #&#x66FF;&#x6362;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;pattern
+%s/pattern/dest/g #&#x66FF;&#x6362;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x6240;&#x6709;pattern
+s&#x66FF;&#x6362;&#x6210;v&#x8868;&#x793A;&#x5BF9;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x64CD;&#x4F5C;
+</code></pre></li>
 <li>&#x79FB;&#x52A8;&#x5230;&#x884C;&#x672B;&#xFF1A;shift+$ &#x884C;&#x9996;&#xFF1A;shift+^</li>
 <li>&#x79FB;&#x52A8;&#x5230;&#x5339;&#x914D;&#x7684;&#x62EC;&#x53F7;&#xFF1A;%</li>
 <li>&#x7CBE;&#x786E;&#x8DF3;&#x5230;&#x67D0;&#x4E00;&#x884C;&#xFF1A;ngg&#x6216;&#x8005;nG</li>
 <li>&#x5411;&#x524D;/&#x540E;&#x7FFB;&#x9875;&#xFF1A;<code>ctrl+f/b</code></li>
-<li><p>vimrc&#x914D;&#x7F6E;&#x6587;&#x4EF6;
- ```perl
+<li><p>vimrc&#x914D;&#x7F6E;&#x6587;&#x4EF6;:
+ ```
  source /etc/vim/vimrc
  &quot; <strong><strong><em>**</em></strong></strong>1. &#x57FA;&#x672C;&#x914D;&#x7F6E;<strong><strong><em>**</em></strong></strong>
  &quot; &#x53BB;&#x6389;&#x6709;&#x5173;vi&#x4E00;&#x81F4;&#x6027;&#x6A21;&#x5F0F;,&#x907F;&#x514D;&#x64CD;&#x4F5C;&#x4E60;&#x60EF;&#x4E0A;&#x7684;&#x5C40;&#x9650;.
@@ -781,7 +780,7 @@ endif
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"vim使用","level":"1.2.3","depth":2,"next":{"title":"git使用","level":"1.2.4","depth":2,"path":"usage/git.md","ref":"usage/git.md","articles":[]},"previous":{"title":"Linux使用","level":"1.2.2","depth":2,"path":"usage/linux.md","ref":"usage/linux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","gitbook":"*"},"file":{"path":"usage/vim.md","mtime":"2022-02-21T10:45:30.418Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-21T11:20:42.938Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"vim使用","level":"1.2.3","depth":2,"next":{"title":"git使用","level":"1.2.4","depth":2,"path":"usage/git.md","ref":"usage/git.md","articles":[]},"previous":{"title":"Linux使用","level":"1.2.2","depth":2,"path":"usage/linux.md","ref":"usage/linux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","gitbook":"*"},"file":{"path":"usage/vim.md","mtime":"2022-02-21T11:31:51.254Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-21T11:32:02.830Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
