@@ -71,7 +71,7 @@ function getHeartPoint(angle) {
     }
     else{
         offsetX = $("#loveHeart").width()-170;// 减的值越小越靠右
-        offsetY = $("#loveHeart").height()-260;// 减的值越小越靠下
+        offsetY = $("#loveHeart").height()-250;// 减的值越小越靠下
     }
 	var t = angle / Math.PI;
 	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
