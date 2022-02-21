@@ -1,0 +1,47 @@
+body{margin:0;padding:0;background:#ffc;font-size:14px;font-family:'微软雅黑','宋体',sans-serif;color:#000000;overflow:auto;text-decoration:none;}
+
+.header{
+    height: 30px;
+}
+.music-box{ height: 30px; margin-right: 200px; float: right;}
+/*.music-box .play{width: 80px; height: 30px; float: left; text-align: center;}
+.music-box .pouse{width: 80px;height: 30px; float: left; text-align: center;}*/
+/*#music{width:100px; height: 30px;}*/
+
+.content{width:1300px; position:relative; margin: 0 auto;}
+.content-left{width:400px; height: 425px;  margin-top: 40px; float: left;}
+.text{width:600px;height:425px;left:200px;}
+/*.pic{width:700px;height:700px;right:200px;top:10px;position:absolute; float: right;}*/
+.textLeft{width:240px;height:100%;margin-left: 50px; float: left;}
+.textRight{width:240px;height:100%; float: left;}
+
+.date{width:600px;bottom:10px;text-align: center;}
+.large{
+    font-size: 40px;
+    color: red;
+}
+.poem{
+    font-size: 20px;
+    color: red;
+}
+
+.content-right{width:700px; margin-top:40px; float: right;}
+#loveHeart{width:670px;height:600px;right: 100px;}
+#garden{width:100%;height:100%}
+#loveu{padding:5px;width:400px; font-size:42px; color: #f2f; margin-top:10px;margin-right:120px;text-align:center;display:none}
+#loveu .signature{width:380px; margin-top:10px;font-size:40px; color: #f3f; font-style:italic; text-align:right;}
+#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
+#words{font-family:"sans-serif"; width:420px; font-size:24px;color:#666}
+#messages{display:none}
+
+#canvas{margin:0 auto;width:1300px;height:650px;position:absolute;}
+
+/*.foot{
+    height: 50px;
+}*/
+
+/*
+div{
+    border: 1px solid #000;
+}
+*/
