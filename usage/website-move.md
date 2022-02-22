@@ -1,6 +1,6 @@
 （环境:轻量应用服务器，应用镜像）
 
-1. 在数据库中备份文件，并下载；
+1. 在数据库中备份文件，并下载；（若登录不上数据库DMS->自建库，请参考下面的参考资料）
 
 2. 新服务器进入数据管理DMS->自建库，输入ip，端口，账户(root)，密码(提前获得的)，之后登录，记录出错信息中的ip，之后连接上服务器启动mysql(`sudo /usr/local/mysql/bin/mysql -uroot -p` 密码为提前获得的密码)，进入mysql后执行`GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'yourpassword' WITH GRANT OPTION;`(将其中的%换为刚刚记录的ip，然后password设为自己的想设的密码)，之后执行`FLUSH PRIVILEGES;` 刷新先前的修改，然后退出即可；(修改mysql登录密码: `set password for root@localhost = password('新密码');`）
 
@@ -12,4 +12,7 @@
 
 6. 如果不能上传多媒体文件，需要给wp-content/uploads权限: `chmod -R 777 uploads/`
 
-参考[阿里服务器新建库操作过程](https://blog.csdn.net/weixin_40862011/article/details/86260700 "阿里服务器新建库操作过程")
+参考资料：
+
+[阿里服务器新建库操作过程](https://blog.csdn.net/weixin_40862011/article/details/86260700 "阿里服务器新建库操作过程")
+
