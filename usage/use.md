@@ -6,6 +6,8 @@ ssh-copy-id server@ip`
 ssh服务器失败，需要删除key：`ssh-keygen -R +你的服务器端的ip地址`
 若需要某台机器能够clone 项目，需要先将机器上的ssh key添加到gitlab上去
 
+windows的ssh免密登录，将C:\Users\stitch\.ssh\id_rsa.pub中的内容复制到服务器上的.ssh/authorized_keys中即可
+
 
 使用豆瓣源：`pip install -i https://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com django`
 末尾加上： `-i http://pypi.douban.com/simple/`
