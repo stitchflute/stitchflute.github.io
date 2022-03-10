@@ -584,26 +584,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <ol>
-<li>&#x5220;&#x9664;&#x672A;&#x8DDF;&#x8E2A;&#x7684;&#x6587;&#x4EF6;&#xFF1A;<pre><code class="lang-perl">git clean -df <span class="hljs-comment">#&#x8FD4;&#x56DE;&#x5230;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#xFF08;&#x672A;&#x8DDF;&#x8E2A;&#x6587;&#x4EF6;&#x7684;&#x5220;&#x9664;&#xFF09;</span>
+                                <h2 id="git&#x4F7F;&#x7528;"><a name="git&#x4F7F;&#x7528;" class="plugin-anchor" href="#git&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>Git&#x4F7F;&#x7528;</h2>
+<ol>
+<li><p>&#x5220;&#x9664;&#x672A;&#x8DDF;&#x8E2A;&#x7684;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>git clean -df #&#x8FD4;&#x56DE;&#x5230;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#xFF08;&#x672A;&#x8DDF;&#x8E2A;&#x6587;&#x4EF6;&#x7684;&#x5220;&#x9664;&#xFF09;
 git clean &#x53C2;&#x6570;
-     -n &#x4E0D;&#x5B9E;&#x9645;&#x5220;&#x9664;&#xFF0C;&#x53EA;&#x662F;&#x8FDB;&#x884C;&#x6F14;&#x7EC3;&#xFF0C;&#x5C55;&#x793A;&#x5C06;&#x8981;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x5C06;&#x8981;&#x88AB;&#x5220;&#x9664;&#x3002;&#xFF08;&#x53EF;&#x5148;&#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x53C2;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x6267;&#x884C;&#xFF09;
-     -f &#x5220;&#x9664;&#x6587;&#x4EF6;
-     -i &#x663E;&#x793A;&#x5C06;&#x8981;&#x5220;&#x9664;&#x7684;&#x6587;&#x4EF6;
-     -d &#x9012;&#x5F52;&#x5220;&#x9664;&#x76EE;&#x5F55;&#x53CA;&#x6587;&#x4EF6;&#xFF08;&#x672A;&#x8DDF;&#x8E2A;&#x7684;&#xFF09;
-     -<span class="hljs-keyword">q</span> &#x4EC5;&#x663E;&#x793A;&#x9519;&#x8BEF;&#xFF0C;&#x6210;&#x529F;&#x5220;&#x9664;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x663E;&#x793A;
-</code></pre>
-</li>
+        -n &#x4E0D;&#x5B9E;&#x9645;&#x5220;&#x9664;&#xFF0C;&#x53EA;&#x662F;&#x8FDB;&#x884C;&#x6F14;&#x7EC3;&#xFF0C;&#x5C55;&#x793A;&#x5C06;&#x8981;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6709;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x5C06;&#x8981;&#x88AB;&#x5220;&#x9664;&#x3002;&#xFF08;&#x53EF;&#x5148;&#x4F7F;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x53C2;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x6267;&#x884C;&#xFF09;
+        -f &#x5220;&#x9664;&#x6587;&#x4EF6;
+        -i &#x663E;&#x793A;&#x5C06;&#x8981;&#x5220;&#x9664;&#x7684;&#x6587;&#x4EF6;
+        -d &#x9012;&#x5F52;&#x5220;&#x9664;&#x76EE;&#x5F55;&#x53CA;&#x6587;&#x4EF6;&#xFF08;&#x672A;&#x8DDF;&#x8E2A;&#x7684;&#xFF09;
+        -q &#x4EC5;&#x663E;&#x793A;&#x9519;&#x8BEF;&#xFF0C;&#x6210;&#x529F;&#x5220;&#x9664;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x663E;&#x793A;
+</code></pre></li>
+</ol>
+<ol>
 <li><p>&#x56DE;&#x9000;&#xFF1A;</p>
-<pre><code class="lang-perl">git <span class="hljs-keyword">reset</span> --hard &#x56DE;&#x9000;&#x5230;&#x4E0A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6240;&#x6709;&#x5DF2;&#x4FEE;&#x6539;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x4E22;&#x5931;
-git <span class="hljs-keyword">reset</span> --hard HASH
-git <span class="hljs-keyword">reset</span> --hard HEAD       (going back to HEAD)
-git <span class="hljs-keyword">reset</span> --hard HEAD^      (going back to the commit before HEAD)
-git <span class="hljs-keyword">reset</span> --hard HEAD~<span class="hljs-number">1</span>     (equivalent to <span class="hljs-string">&quot;^&quot;</span>)
-git <span class="hljs-keyword">reset</span> --hard HEAD~<span class="hljs-number">2</span>     (going back two commits before HEAD)
-git stash <span class="hljs-comment">#&#x628A;&#x6240;&#x6709;&#x6CA1;&#x6709;&#x63D0;&#x4EA4;&#x7684;&#x4FEE;&#x6539;&#x6682;&#x5B58;&#x5230;stash&#x91CC;&#x9762;&#x3002;&#x53EF;&#x7528;git stash pop&#x56DE;&#x590D;&#x3002;</span>
-</code></pre>
-</li>
+<pre><code>git reset --hard &#x56DE;&#x9000;&#x5230;&#x4E0A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6240;&#x6709;&#x5DF2;&#x4FEE;&#x6539;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x4E22;&#x5931;
+git reset --hard HASH
+git reset --hard HEAD       (going back to HEAD)
+git reset --hard HEAD^      (going back to the commit before HEAD)
+git reset --hard HEAD~1     (equivalent to &quot;^&quot;)
+git reset --hard HEAD~2     (going back two commits before HEAD)
+git stash #&#x628A;&#x6240;&#x6709;&#x6CA1;&#x6709;&#x63D0;&#x4EA4;&#x7684;&#x4FEE;&#x6539;&#x6682;&#x5B58;&#x5230;stash&#x91CC;&#x9762;&#x3002;&#x53EF;&#x7528;git stash pop&#x56DE;&#x590D;&#x3002;
+</code></pre></li>
+</ol>
+<ol>
 <li><p>&#x5408;&#x5E76;&#xFF1A;
 &#x51B2;&#x7A81;&#x4FE1;&#x606F;&#xFF1A;</p>
 <pre><code>HEAD
@@ -613,6 +617,16 @@ git stash <span class="hljs-comment">#&#x628A;&#x6240;&#x6709;&#x6CA1;&#x6709;&#
 new_ephemeral
 </code></pre><p>&#x5C06;master&#x5206;&#x652F;&#x5408;&#x5E76;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x652F;&#xFF1A;<code>git merge master</code></p>
 </li>
+<li><p>&#x6682;&#x5B58;&#x4EE3;&#x7801;&#xFF08;&#x4E0D;&#x8FDB;&#x884C;add&#x548C;commit&#x64CD;&#x4F5C;&#xFF09;&#x5E76;&#x5207;&#x6362;&#x5230;&#x522B;&#x7684;&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code>git stash save &quot;&#x4FE1;&#x606F;&quot; &#x6682;&#x5B58;&#x5F53;&#x524D;&#x5206;&#x652F;
+&#x5207;&#x6362;&#x5230;&#x522B;&#x7684;&#x5206;&#x652F;&#x5B8C;&#x6210;&#x60F3;&#x505A;&#x7684;&#x5DE5;&#x4F5C;&#x518D;&#x5207;&#x6362;&#x56DE;&#x5F53;&#x524D;&#x5206;&#x652F;
+git stash pop &#x56DE;&#x5230;&#x6700;&#x540E;&#x6682;&#x5B58;&#x7684;&#x5206;&#x652F;
+git stash list &#x67E5;&#x770B;&#x6240;&#x6709;&#x6682;&#x5B58;&#x7248;&#x672C;&#x4FE1;&#x606F;
+git stash apply stash@{0} &#x56DE;&#x5230;&#x6307;&#x5B9A;&#x6682;&#x5B58;&#x7684;&#x5206;&#x652F;
+</code></pre></li>
+<li><p>&#x67E5;&#x770B;&#x5386;&#x53F2;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>git show VERSION:path_to_file
+</code></pre></li>
 </ol>
 
                                 
@@ -657,7 +671,7 @@ new_ephemeral
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git使用","level":"1.6.4","depth":2,"next":{"title":"gdb使用","level":"1.6.5","depth":2,"path":"usage/gdb.md","ref":"usage/gdb.md","articles":[]},"previous":{"title":"vim使用","level":"1.6.3","depth":2,"path":"usage/vim.md","ref":"usage/vim.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","gitbook":"*"},"file":{"path":"usage/git.md","mtime":"2022-02-21T10:45:51.473Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-04T02:58:56.721Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git使用","level":"1.6.4","depth":2,"next":{"title":"gdb使用","level":"1.6.5","depth":2,"path":"usage/gdb.md","ref":"usage/gdb.md","articles":[]},"previous":{"title":"vim使用","level":"1.6.3","depth":2,"path":"usage/vim.md","ref":"usage/vim.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","gitbook":"*"},"file":{"path":"usage/git.md","mtime":"2022-03-10T03:52:28.807Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-10T03:52:57.211Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
