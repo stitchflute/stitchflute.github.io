@@ -29,7 +29,7 @@
    
 
 3. 合并：
-  冲突信息：
+    冲突信息：
 
   ```
   HEAD
@@ -55,6 +55,26 @@
 
    ```
    git show VERSION:path_to_file
+   ```
+
+6. git设置不需要输入用户名和密码：
+
+   ```
+   # .gitconfig
+   [user]
+       email = fugang15@mails.ucas.ac.cn
+       name = fugang
+   [credential]
+       helper = store
+   ```
+
+7. git remove用法
+
+   ```
+   git remote -v
+   git remote add name 仓库地址
+   git remote rename old_name new_name
+   git remote remove name
    ```
 
    
